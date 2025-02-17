@@ -1,0 +1,71 @@
+/* Скрыть ссылку "Skip to Main Content", пока она не получит фокус */
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 10px;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 10px;
+}
+
+/* Стили навигации */
+nav {
+    display: inline-block;
+    width: 80%;
+    background: #333;
+    padding: 10px;
+}
+
+nav img {
+    width: 10%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Grid Layout */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.grid img {
+    width: 100%;
+}
+
+/* Flex Layout */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flex img {
+    width: 30%;
+}
+
+/* Улучшение контраста */
+body {
+    background: #f4f4f4;
+    color: #222;
+}
